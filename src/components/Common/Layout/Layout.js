@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 import * as actionCreators from '../../../store/actions/index';
 import {reactLocalStorage} from 'reactjs-localstorage';
 import classes from './Layout.module.css';
-import Login from '../../Login/Login'
 import OcvReports from '../../OcvReports/OcvReports';
 import Ocv from '../../Ocv/Ocv';
 import Diagram from '../../Diagram/Diagram';
@@ -52,13 +51,12 @@ class Layout extends Component {
 
     return (
         <React.Fragment>
-          <Route path="/login" exact  component={Login}/>
-
           <div className={classes.layoutTopBar}><TopBar/></div>
           <div className={classes.layoutLeftBar}><LeftBar/></div>          
           <div className={classes.layoutContent}>
             
             {/* <Route path="/ocv" exact render={(props) => <Ocv {...props} showSpinner = {this.showSpinner} showMessage = {this.showMessage} showConfirmationDialog = {this.showConfirmationDialog}/>}/> */}
+            <Route path="/" exact render={(props) => <Diagram {...props} showSpinner = {this.showSpinner} showMessage = {this.showMessage} showConfirmationDialog = {this.showConfirmationDialog}/>}/>
             <Route path="/diagram" exact render={(props) => <Diagram {...props} showSpinner = {this.showSpinner} showMessage = {this.showMessage} showConfirmationDialog = {this.showConfirmationDialog}/>}/>
             <Route path="/ocv" exact render={(props) => <Ocv {...props} showSpinner = {this.showSpinner} showMessage = {this.showMessage} showConfirmationDialog = {this.showConfirmationDialog}/>}/>
             <Route path="/ocvReports" exact render={(props) => <OcvReports {...props} showMessage = {this.showMessage}/>}/>
