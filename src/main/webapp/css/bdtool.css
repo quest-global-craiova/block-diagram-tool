@@ -1,0 +1,876 @@
+body {
+  background-color: #eee;
+  overflow: hidden;
+
+  font-family: "Open Sans","open-sans",sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #333 !important;  
+}
+
+
+/*Login View*/
+.loginContainer {
+  /* background-image: url("../images/loginBackground.jpg"); */
+  background-size: cover;
+  position: fixed; 
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .formSigninHeading,
+.form-signin .checkbox {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  /*border-bottom-right-radius: 0;*/
+  /*border-bottom-left-radius: 0;*/
+}
+
+.form-signin input[type="password"] {
+  /*border-top-left-radius: 0;*/
+  /*border-top-right-radius: 0;*/
+}
+
+.form-signin .bootstrap-select {
+	width: 100% !important;
+	padding-top: 10px;
+}
+
+.form-signin .demoAccountLabel {
+	padding-top: 10px;
+	font-size: 19.9px;
+}
+
+.userContainer input{
+  margin-bottom: 20px;
+}
+.passwordContainer {
+
+}
+.accessBtn {
+  margin-top: 40px;
+}
+
+.passwordForgotten {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.passwordForgotten a {
+  color: #c9c1c1;
+}
+
+.resetPasswordBtn {
+  margin-top: 40px;
+}
+
+.backToLoginPageButton {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.backToLoginPageButton a {
+   color: #c9c1c1;
+}
+
+.changePasswordButton {
+  margin-top: 40px;
+}
+
+
+
+/*End of Login View*/
+
+
+.cursor {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+#navbar {
+	padding: 0px;
+}
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+
+
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#wrapper {
+    padding-left: 0px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+
+#rightBar-wrapper {
+  right: 0px;
+  width: 250px;
+  background: #fff;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+  border: 1px solid #dfdfdf;
+}
+
+#sidebar-wrapper {
+  margin-left: 0px;
+  left: 0px;
+  width: 250px;
+  background: #fff;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+  border: 1px solid #dfdfdf;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#page-content-wrapper {
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+    position: fixed;
+}
+
+.page-content .row{
+	margin-right: 0px;
+}
+
+#wrapper.active {
+  padding-left: 250px;
+}
+
+.mainIcon
+{
+   margin-top: 3px;
+   margin-left: 2px;
+   font-size: 24px;
+   padding: 3px;
+   text-indent: 0px;
+   background: #337ab7;
+   color: #fff;
+}
+
+.subIcon
+{
+	padding-right: 5px;
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;  
+	height: 16px; 
+}
+
+.sidebarMenu {
+	background: #fdfdfd;	
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+@media (max-width:767px) {
+    #wrapper {
+    padding-left: 0px;
+    transition: all .4s ease 0s;
+}
+#sidebar-wrapper {
+    left: 0px;
+}
+#wrapper.active {
+    padding-left: 250px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all .4s ease 0s;
+}
+}
+
+
+.searchTextbox {
+	width: 100% !important;
+	height: 40px !important;
+}
+
+.sidebar-nav .active a {
+	background-color: #337ab7;
+}
+
+.spinner {
+    background: #ffffff;
+    opacity: 0.6;
+    color: #666666;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 25%;
+}
+
+#alertContainer {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+  	z-index: 9999 !important;
+}
+
+.alert {
+	padding: 10px !important;
+} 
+
+.header {
+    border: 1px solid #dfdfdf;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #000 !important;
+}
+
+.searchForm {
+	width: 40% !important;	
+}
+
+.filterButton {
+	margin-top: 8px;	
+	height: 40px !important;
+}
+
+.userDetailsButton {
+	margin-top: 8px;	
+}
+
+.userDetailsButton img {
+	width: 40px;
+}
+
+.backButton {
+	border: none !important;
+}
+
+/*Topics*/
+.groupsContainer {
+  background-color: #fff !important;
+  border: none !important;
+  padding: 0px !important;
+}
+
+.topicsLabel {
+	margin-top: 5px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.recipesLabel {
+	margin-top: 5px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.groupsContainer .list-group {
+	margin-bottom: 0px !important;
+}
+
+.groupsContainer .list-group-item {
+  	padding: 7px 3px;
+  	cursor: pointer;
+  	height: 50px;
+}
+
+.groupsContainer .list-group-item.topicItem:hover {
+	background-color: #d4e7f7 !important;
+}
+
+.groupsContainer .list-group-item:not(.disabled){
+  	background-color: #fff;
+}
+
+.groupsContainer .list-group-item .ingredientsLabel {
+	float: left;
+	width: 140px;
+	font-size: 14px;
+}
+
+/*End of Topics*/
+
+/*Results Widget*/
+
+.resultsContainer {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.resultsText {
+  float: left;
+  margin-right: 200px;
+  font-size: 28px;
+  text-decoration-color: #e5c31b;
+}
+
+.resultsText span {
+  line-height: 30px;
+}
+
+.dataRangeText {
+  float: left;
+  margin-right: 20px;
+  color: #9b9595;
+  font-size: 18px; 
+}
+
+.dataRangeText span {
+  line-height: 35px;
+}
+
+.sortByDD {
+  float: left;
+  margin-right: 20px;
+
+}
+
+.sortByDD span {
+  line-height: 35px;
+  color: #9b9595;
+  font-size: 18px;	
+}
+
+.dateButtonsGroup {
+  float: left;
+  margin-right: 20px;
+
+}
+
+.dateButtonsGroup label {
+  background-color: #9b9595;
+  border-color: #9b9595;
+}
+
+.dateButtonsGroup label.active{
+  background-color: #9b9595;
+  border-color: #9b9595;
+  color: #e5c31b;
+}
+
+.sortByDD button {
+  background-color: transparent;
+  border-color: #9b9595;
+  color: #0f0f0f;
+}
+
+.articlesViewType label{
+  background-color: transparent;
+  border-color: #9b9595;
+  color: #0f0f0f;
+}
+
+.articlesViewType label.active{
+  background-color: #828180;
+  border-color: #828180;
+  color: black;
+}
+
+.sortByDD button.active {
+  background-color: transparent;
+  border-color: transparent;
+}
+/*End of Result widget*/
+
+/*Articles Widget*/
+
+.paragraphDescription {
+  white-space: nowrap;
+  width: 50em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 19px;
+}
+
+.articleContainer img {
+	width: 150px;
+}
+
+/*End of articles widget*/
+
+/*Article Details Widget*/
+
+.articleDetailsAuthor {
+	float: left;
+	background-color: lightgray !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    border-radius: 8px !important;
+}
+
+.articleDetailsLoadDate {
+	float: left;
+	color: lightgray;
+	padding-left: 6px;
+    padding-right: 6px;
+}
+
+.articleDetailsPublisher {
+	font-size: 15px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.articleDetailsHeadline {
+    font-size: 40px;
+}
+
+.articleDetailsImage img{
+	width: 300px;
+	height: 300px;
+}
+
+/*End of article details widget*/
+
+/*Article list item*/
+
+.articleListItemAuthor {
+	background-color: lightgray !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    border-radius: 8px !important;
+}
+
+.articleListItemLoadDate {
+	float: left;
+	color: lightgray;
+	padding-left: 6px;
+    padding-right: 6px;
+}
+
+.articleListItemPublisher {
+	font-size: 15px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.articleListItemHeadline {
+    font-size: 25px;
+}
+
+.articleListItemTopicsLabel {
+	float: left;
+	font-size: 15px;
+    font-weight: bold;
+    color: lightgray;
+    padding-right: 10px;
+}
+
+.articleListItemPublication {
+	margin-top: 10px;
+}
+
+.articleListItemTopics {
+	margin-top: 10px;
+}
+
+/*End of article list item*/
+
+/*Topics Configuration Widget */
+.addTopicGroup {
+	width: 30px;	
+	height: 30px;	
+	margin-left: 25px;
+	cursor: pointer;
+	color: #f9c030;
+	font-size: 20px;
+}
+
+.editTopicGroup {
+	width: 30px;	
+	height: 30px;	
+	margin-left: 25px;
+	cursor: pointer;
+	color: #333333;
+	font-size: 20px;
+	font-weight: bold !important;
+}
+
+.deleteTopicGroup {
+	width: 30px;	
+	height: 30px;	
+	margin-left: 25px;
+	cursor: pointer;
+	color: #ff7373;
+	font-size: 20px;
+}
+
+.deleteTopic {
+	width: 30px;	
+	height: 30px;	
+	margin-left: 134px;
+	cursor: pointer;
+	color: #ff7373;
+	font-size: 20px;
+}
+
+
+.topicsConfigurationContainer {
+  background-color: #fff !important;
+  border: none !important;
+}
+
+.topicsConfigurationContainer .list-group-item {
+	padding: 15px 10px;
+}
+
+.topicsConfigurationContainer .topicsGroup {
+	font-weight: bold;
+}
+/*End Topics Configuration Widget */
+
+.underConstruction {
+	background: url("../images/underConstructionIcon.png") no-repeat;
+	width: 150px;
+	height: 150px;
+}
+
+.nutrientsItem {
+  background-color: #337ab7 !important;
+  color: #fff !important;
+  padding-right: 8px !important;
+  padding-top: 10px !important;
+}
+
+.nutrientsItem .nutrientsGuideButton{
+  padding-top: 2px !important;
+}
+
+.vitaminsCategory {
+  background-color: #275e8e !important;
+}
+
+.mineralsCategory {
+  background-color: #214c72 !important;
+}
+
+.macroNutrientsCategory {
+  background-color: #173754 !important;
+}
+
+.ingredientBarChart {
+}
+
+.combinationBarChart {
+}
+
+.ingredientsCheckbox {
+  float: right;
+  margin-top: 0px !important;
+}
+
+.ingredientSelected {
+	background: #f4f3b5 !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.topicItem .ingredientWeight {
+  width: 50px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 30px;
+  text-align: right;
+  float: right;
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+}
+
+.combinatiosDropdown {
+  width: 100%;
+  margin-top: 7px;
+}
+
+.combinatiosDropdown .dropdown-menu {
+  width: 100%;
+  max-height: 275px;
+  overflow: auto;
+}
+
+.combinatiosDropdown .dropdown-menu a {
+  cursor: pointer;
+}
+
+
+.combinatiosDropdownSaveButton, .combinatiosDropdownClearButton, .combinatiosDropdownRemoveButton {
+  width: auto;
+  height: 30px;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
+.ingredientItemDisabled:hover {
+  
+}
+
+.combinationsDropdown {
+	margin-left: 1px;
+}
+
+.ingredientsSearchClear {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    bottom: 2px;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+    font-size:1.1em;
+}
+
+.ingredientsSearchClear:hover {
+	color: #aaa;
+}
+
+.clearSearch {
+	width: 20px;
+}
+
+.highcharts-label.highcharts-tooltip span{
+	left: 1px !important;
+	top: 1px !important;
+}
+
+.highcharts-label.highcharts-tooltip .chartTooltip {
+  color: black;
+  background-color: white !important;
+  z-index: 999999 !important;
+  width: 173px;
+  height: 50px;
+  margin: 5px;
+}
+
+.datePicker {
+  padding-bottom: 5px;
+  float: left;
+  padding-top: 15px;
+}
+
+.datePicker .input-group-addon {
+  padding-left: 8px !important;
+}
+
+.confirmPopup {
+  z-index: 99999999 !important;
+}
+
+.logoutButton {
+	margin: 8px 8px 8px 8px;
+	padding: 3px !important;
+	font-size: 12px !important;
+}
+
+.nutrientsGuideButton:hover {
+	color: #000;
+}
+
+.nutrientsGuideButton {
+	font-size:1.2em;
+}
+
+.nutrientsGuidePopup {
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 0px !important;
+
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-family: "Open Sans","open-sans",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;    
+}
+
+.nutrientsGuidePopup h1 {
+	font-size: 24px;
+}
+
+.nutrientsGuidePopup h2 {
+	font-size: 22px;
+}
+
+.nutrientsGuidePopup h3 {
+	font-size: 20px;
+}
+
+.nutrientsGuidePopup .panel-body{
+	overflow: auto;
+}
+
+.nutrientsGuidePopup .panel-footer{
+	border-bottom: 1px solid #337ab7;
+	border-top: none !important;
+}
+
+.combinationBarChart .chartCategoryLabel , .ingredientBarChart .chartCategoryLabel {
+	cursor: pointer !important;
+}
+
+.combinationBarChart .chartCategoryLabel:hover, .ingredientBarChart .chartCategoryLabel:hover {
+	/*font-weight: bold !important;*/
+	text-decoration: underline !important;
+}
+
+.highcharts-axis-labels .tooltip {
+}
+
+.matrixPopup {
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 0px !important;
+
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-family: "Open Sans","open-sans",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;    
+}
+
+.matrixPopup .panel-body{
+	overflow: auto;
+}
+
+.matrixPopup .panel-footer{
+	border-bottom: 1px solid #337ab7;
+	border-top: none !important;
+}
