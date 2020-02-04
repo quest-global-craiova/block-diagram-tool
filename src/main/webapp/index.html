@@ -8,6 +8,7 @@
 <meta name="author" content="">
 <title>Block Diagram Tool</title>
 <link rel='stylesheet' href="css/bdtool.css" type='text/css' media='all' />
+<link rel='stylesheet' href="libs/mxgraph/css/mxgraph.css" type='text/css' media='all' />
 </head>
 <body>
 	<div id="alertContainer"></div>
@@ -26,9 +27,13 @@
 	<div id="spinnerContainer"></div>
 	<div id="confirmPopupContainer"></div>
 
+    <script type="text/javascript">
+    	mxBasePath = 'libs/mxgraph';
+	</script>
+
 	<script src="libs/jquery-3.1.1/jquery-3.1.1.min.js"></script>
 	<script src="libs/mustache/mustache.js"></script>
-	<script type="text/javascript" src="libs/mxgraph/mxClient.min.js"></script> 
+	<script src="libs/mxgraph/mxClient.min.js"></script> 
 
 	<script src="js/modules/Config.js"></script>
 	<script src="js/modules/MessagesEn.js"></script>
@@ -42,7 +47,9 @@
 	<script src="js/modules/common/Spinner.js"></script>
 	<script src="js/modules/common/Alert.js"></script>
 	<script src="js/modules/common/ConfirmPopup.js"></script>
+	
 	<script src="js/modules/diagram/DiagramPage.js"></script>
+	<script src="js/modules/diagram/DiagramBuilder.js"></script>
 
 	<script src="js/modules/Index.js"></script>
 

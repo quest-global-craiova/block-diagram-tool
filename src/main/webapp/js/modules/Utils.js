@@ -13,12 +13,12 @@ alva.Utils = function() {
 		},
 		resizeWidgets: function() {
 			var headerHeight = $('#headerContainer').height();
-			var leftBarWidth = $('#sidebar-wrapper').width();
+			var leftBarWidth = $('#leftBar-wrapper').width();
 			var rightBarWidth = $('#rightBar-wrapper').width();
 			$("#page-content-wrapper").css("height", $(window).height() - headerHeight);
 			$("#page-content-wrapper").css("width", $(window).width() - leftBarWidth - rightBarWidth);
-			$("#page-content-wrapper").css("left", $('#sidebar-wrapper').position().left + leftBarWidth);
-			$("#sidebar-wrapper").css("height", $(window).height() - headerHeight);			
+			$("#page-content-wrapper").css("left", $('#leftBar-wrapper').position().left + leftBarWidth);
+			$("#leftBar-wrapper").css("height", $(window).height() - headerHeight);			
 			$("#rightBar-wrapper").css("height", $(window).height() - headerHeight);			
 		},
 		showSpinner: function(visible) {

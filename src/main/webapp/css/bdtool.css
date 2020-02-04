@@ -7,6 +7,16 @@ body {
   color: #333 !important;  
 }
 
+.diagramContainerWrapper {
+	top: 50px !important;
+}
+
+.leftBar li {
+	cursor: pointer;
+	padding: 5px;
+}
+
+
 
 /*Login View*/
 .loginContainer {
@@ -198,7 +208,7 @@ body {
   border: 1px solid #dfdfdf;
 }
 
-#sidebar-wrapper {
+#leftBar-wrapper {
   margin-left: 0px;
   left: 0px;
   width: 250px;
@@ -283,13 +293,13 @@ body {
     padding-left: 0px;
     transition: all .4s ease 0s;
 }
-#sidebar-wrapper {
+#leftBar-wrapper {
     left: 0px;
 }
 #wrapper.active {
     padding-left: 250px;
 }
-#wrapper.active #sidebar-wrapper {
+#wrapper.active #leftBar-wrapper {
     left: 250px;
     width: 250px;
     transition: all .4s ease 0s;
