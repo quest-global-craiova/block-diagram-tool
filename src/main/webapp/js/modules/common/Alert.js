@@ -11,7 +11,7 @@ alva.common.Alert.prototype.init = function(message, alertType, timeout) {
 };
 
 alva.common.Alert.prototype.render = function(message, alertType, timeout) {
-	$("#alertContainer").load("/bdtool/views/common/alert.html", function() {
+	$("#alertContainer").load("views/common/alert.html", function() {
 		var data = {
 			alertType: alertType,
 			message: message

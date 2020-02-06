@@ -19,8 +19,10 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-          <warSourceDirectory>webapp</warSourceDirectory>
-        </configuration>
+			<warSourceDirectory>src/main/webapp</warSourceDirectory>
+			<webappDirectory>${project.build.directory}/bdtool</webappDirectory>
+			<failOnMissingWebXml>false</failOnMissingWebXml>
+		</configuration>
       </plugin>
     </plugins>
   </build>

@@ -25,7 +25,7 @@ alva.common.Empty.prototype.loadData = function(config) {
 
 alva.common.Empty.prototype.render = function(config) {
 	var thisObj = this;
-	$("#emptyContainer").load("/bdtool/views/common/empty.html", function() {
+	$("#emptyContainer").load("views/common/empty.html", function() {
 		var data = {};
 
 		alva.Utils.template('#emptyContainer', data);

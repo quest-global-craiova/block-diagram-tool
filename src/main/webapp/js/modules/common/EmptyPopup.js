@@ -12,7 +12,7 @@ alva.dashboard.Matrix.prototype.loadData = function(config) {};
 
 alva.dashboard.Matrix.prototype.render = function(config) {
 	var thisObj = this;
-	$("#matrixPopupContainer").load("/bdtool/views/dashboard/matrix.html", function() {
+	$("#matrixPopupContainer").load("views/dashboard/matrix.html", function() {
 		var language = alva.Utils.getLanguage().toLowerCase();
 	
 		

@@ -25,7 +25,7 @@ alva.diagram.DiagramBuilder.prototype.loadData = function(config) {
 
 alva.diagram.DiagramBuilder.prototype.render = function(config) {
 	var thisObj = this;
-	$(config.containerSelector).load("/bdtool/views/diagram/diagramBuilder.html", function() {
+	$(config.containerSelector).load("views/diagram/diagramBuilder.html", function() {
 		var data = {};
 
 		// alva.Utils.template('#emptyContainer', data);

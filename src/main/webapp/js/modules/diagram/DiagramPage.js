@@ -13,7 +13,7 @@ alva.diagram.DiagramPage.prototype.loadData = function(config) {
 
 alva.diagram.DiagramPage.prototype.render = function(config) {
 	var thisObj = this;
-	$("#pageContentContainer").load("/bdtool/views/diagram/diagramPage.html", function() {
+	$("#pageContentContainer").load("views/diagram/diagramPage.html", function() {
 
 		new alva.diagram.DiagramBuilder({
 			containerSelector: "#diagramBuilderContainer"

@@ -10,7 +10,7 @@ alva.common.RightBar.prototype.render = function(config) {
 	var thisObj = this;
 	alva.common.isRightBarLoaded = false;
 
-	$(config.rightBarContainerSelector).load("/bdtool/views/common/rightBar.html", function() {
+	$(config.rightBarContainerSelector).load("views/common/rightBar.html", function() {
 	    var data = {
 	        messages: {
 	            MESSAGE_DASHBOARD: alva.Utils.getMessage('MESSAGE_DASHBOARD'),

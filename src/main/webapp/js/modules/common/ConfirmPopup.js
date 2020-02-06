@@ -9,7 +9,7 @@ alva.common.ConfirmPopup.prototype.init = function(config) {
 alva.common.ConfirmPopup.prototype.loadData = function(config) {};
 
 alva.common.ConfirmPopup.prototype.render = function(config) {
-	$(config.containerSelector).load("/bdtool/views/common/confirmPopup.html", $.proxy(function() {
+	$(config.containerSelector).load("views/common/confirmPopup.html", $.proxy(function() {
 		this.loadData(config);		
 		alva.Utils.template(config.containerSelector, config);
 		$("#confirmPopup").modal();

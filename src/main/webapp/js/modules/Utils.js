@@ -51,7 +51,7 @@ alva.Utils = function() {
 		loadApplicationData: function(callback) {
 //			$.ajax({
 //				method: "GET",
-//				url: "/bdtool/services/applicationData",
+//				url: "services/applicationData",
 //				success: $.proxy(function(response) {
 //					alva.Index.data = response;
 //					alva.Utils.loadSessionParameters(function(){

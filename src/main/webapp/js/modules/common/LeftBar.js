@@ -10,7 +10,7 @@ alva.common.LeftBar.prototype.render = function(config) {
 	var thisObj = this;
 	alva.common.isLeftBarLoaded = false;
 
-	$(config.leftBarContainerSelector).load("/bdtool/views/common/leftBar.html", function() {
+	$(config.leftBarContainerSelector).load("views/common/leftBar.html", function() {
 	    var data = {
 	        messages: {
 	            MESSAGE_DASHBOARD: alva.Utils.getMessage('MESSAGE_DASHBOARD'),

@@ -8,7 +8,7 @@ alva.common.Spinner.prototype.init = function(config) {
 };
 
 alva.common.Spinner.prototype.render = function(config) {
-	$(config.containerSelector).load("/bdtool/views/common/spinner.html", function() {});
+	$(config.containerSelector).load("views/common/spinner.html", function() {});
 
 };
 

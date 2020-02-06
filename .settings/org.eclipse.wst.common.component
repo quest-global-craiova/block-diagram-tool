@@ -2,8 +2,9 @@
     <wb-module deploy-name="bdtool-0.0.1-SNAPSHOT">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/" source-path="/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <property name="context-root" value="bdtool"/>
-        <property name="java-output-path" value="/bdtool/build/classes"/>
+        <property name="java-output-path" value="/target/classes"/>
     </wb-module>
 </project-modules>

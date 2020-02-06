@@ -8,7 +8,7 @@ alva.common.Header.prototype.init = function(config) {
 
 alva.common.Header.prototype.render = function(config) {
 	var thisObj = this;
-	$(config.headerContainerSelector).load("/bdtool/views/common/header.html", function() {
+	$(config.headerContainerSelector).load("views/common/header.html", function() {
 		// var imageSource = alva.Utils.getApplicationData(alva.Constants.APPLICATION_PROPERTIES_IMAGES_URL) + "/userImage.png";
 		// $("#userImage").attr("src", imageSource);
 
